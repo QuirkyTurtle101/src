@@ -1,16 +1,16 @@
 class Graf {
 
   void display(ArrayList<Data> list) {
-    int x =0;
+    int x = 0;
     int y = 0;
     for (Data d : list) {
-      y= y + 1;
-      rect(x, y, d.deaths*25, 1);
+      x = x + 1;
+      rect(x, 800-d.deaths/10, 1, d.deaths/10);
     }
   }
 
   void hentDag(ArrayList<Data> list) {
-    Data d = list.get(mouseY);
+    Data d = list.get(mouseX);
     println(d.deaths);
   }
 }
