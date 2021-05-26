@@ -2,7 +2,7 @@ class Broker {
   Table table;
   ArrayList<Data> list = new ArrayList<Data> ();
 
-  void hentData() {
+  void getData() {
     table = loadTable("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv");
 
     for (TableRow row : table.rows()) {

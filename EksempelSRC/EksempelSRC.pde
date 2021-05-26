@@ -1,10 +1,10 @@
-Graf graf = new Graf();
+Graph graf = new Graph();
 Broker broker = new Broker();
 
 void setup() {
 
   size(800, 800);
-  broker.hentData();
+  broker.getData();
 }
 
 void draw() {
@@ -14,5 +14,5 @@ void draw() {
 
 
 void mousePressed() {
-  graf.hentDag(broker.list);
+  graf.getDay(broker.list);
 }
