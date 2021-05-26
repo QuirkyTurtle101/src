@@ -1,4 +1,4 @@
-Graph graf = new Graph();
+Graph graph = new Graph();
 Broker broker = new Broker();
 
 void setup() {
@@ -8,11 +8,10 @@ void setup() {
 }
 
 void draw() {
-
-  graf.display(broker.list);
+  graph.display(broker.list);
 }
 
 
 void mousePressed() {
-  graf.getDay(broker.list);
+  graph.getDay(broker.list);
 }
