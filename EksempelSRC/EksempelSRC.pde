@@ -1,5 +1,6 @@
 Graph graph = new Graph();
 Broker broker = new Broker();
+String output = "";
 
 void setup() {
 
@@ -8,10 +9,15 @@ void setup() {
 }
 
 void draw() {
+  clear();
+  background(255);
   graph.display(broker.list);
+  textSize(30);
+  fill(0);
+  text(output, 400-textWidth(output), 30);
 }
 
 
 void mousePressed() {
-  graph.getDay(broker.list);
+  output = graph.getDay(broker.list);
 }
